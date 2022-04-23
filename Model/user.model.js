@@ -1,5 +1,5 @@
-const collection = require(__dirname +'./DB/connection');
-const { COLLECTION_NAME } = require(__dirname +'../Keys/constant');
+const collection = require('./db/connection');
+const { COLLECTION_NAME } = require('../keys/constant');
 const { model } = require('mongoose');
 
 const userModel = {};

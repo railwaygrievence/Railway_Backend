@@ -1,15 +1,15 @@
 const jwt = require('jsonwebtoken');
-const adminService =require(__dirname +'./admin.service')
+const adminService =require('./admin.service')
 
-const userModel = require(__dirname +'../model/user.model');
-const { ApiError } = require(__dirname +'../objectCreator/objectCreator');
-const { JWT_KEY } = require(__dirname +'../keys/constant');
-const serviceUtils = require(__dirname +'../utils/service.util');
+const userModel = require('../model/user.model');
+const { ApiError } = require('../objectCreator/objectCreator');
+const { JWT_KEY } = require('../keys/constant');
+const serviceUtils = require('../utils/service.util');
 
 const userService ={};
 const nodemailer = require('nodemailer');
 const { response } = require('express');
-const stationListModel = require(__dirname +'../Model/stationList.model');
+const stationListModel = require('../model/stationList.model');
 userService.createUser = userDetails => {
     console.log("fdagfSHD")
     return userModel.getUserById(userDetails.PFNumber)

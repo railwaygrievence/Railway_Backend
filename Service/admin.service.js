@@ -1,12 +1,12 @@
 const { response } = require('express');
 const jwt = require('jsonwebtoken');
 
-const adminModel = require(__dirname +'../model/admin.model');
-const { sseStationList } = require(__dirname +'../Model/stationList.model');
-const stationListModel = require(__dirname +'../Model/stationList.model');
-const userModel = require(__dirname +'../model/user.model');
-const { ApiError } = require(__dirname +'../objectCreator/objectCreator');
-const serviceUtils = require(__dirname +'../utils/service.util');
+const adminModel = require('../model/admin.model');
+const { sseStationList } = require('../model/stationList.model');
+const stationListModel = require('../model/stationList.model');
+const userModel = require('../model/user.model');
+const { ApiError } = require('../objectCreator/objectCreator');
+const serviceUtils = require('../utils/service.util');
 
 const adminService ={};
 var currentdate=new Date(); 

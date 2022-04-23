@@ -1,6 +1,6 @@
 const express = require("express");
-const adminService = require(__dirname +"../service/admin.service");
-const { userAuth, adminAuth,mgmtAuth } = require(__dirname +'../middleware/auth.middleware');
+const adminService = require("../service/admin.service");
+const { userAuth, adminAuth,mgmtAuth } = require('../middleware/auth.middleware');
 
 const adminRouter = express.Router();
 
