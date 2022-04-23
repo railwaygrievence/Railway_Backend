@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const {COLLECTION_NAME} = require('../../Keys/constant');
+const {COLLECTION_NAME} = require(__dirname +'../../Keys/constant');
 
 mongoose.Promise = global.Promise;
 const Schema = mongoose.Schema;

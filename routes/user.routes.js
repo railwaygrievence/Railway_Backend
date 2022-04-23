@@ -2,10 +2,10 @@ const express = require("express");
 var multer  = require('multer')
 var formidable = require('formidable')
 const fs = require('fs')
-const usersService = require("../Service/user.service");
-const { userAuth, adminAuth } = require('../Middleware/auth.middleware');
-const userService = require("../Service/user.service");
-const {setPathgrievanceApplication, setPathFilledApplication, setPathAck} = require('../Middleware/file-system.middleware');
+const usersService = require(__dirname +"../Service/user.service");
+const { userAuth, adminAuth } = require(__dirname +'../Middleware/auth.middleware');
+const userService = require(__dirname +"../Service/user.service");
+const {setPathgrievanceApplication, setPathFilledApplication, setPathAck} = require(__dirname +'../Middleware/file-system.middleware');
 const userRouter = express.Router();
 const path = require('path');
 
